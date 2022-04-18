@@ -1,0 +1,17 @@
+.show {
+  transition: ease-in-out 1s;
+}
+.textShow {
+  animation: showText 1s ease-in-out;
+}
+@keyframes showText {
+  from {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  to {
+    opacity: 1;
+  }
+}

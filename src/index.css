@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* font-family: "Share Tech Mono", monospace; */
@@ -10,15 +9,20 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @layer components {
+@layer components {
   .button {
-    @apply 
+    @apply w-[80px] h-[65px] bg-[#4d4d4d] text-white text-[20px] border-[1px] border-black hover:text-black hover:border-gray-400;
   }
-} */
+  .buttonQuotes {
+    @apply relative right-[-82px] h-[38px] border-none border-[3px] text-[#fff] outline-none text-[0.85em] px-[18px] pt-[8px] pb-[6px] mt-[30px] opacity-100 cursor-pointer rounded;
+  }
+  .buttonIcon {
+    @apply text-white px-[12px] pt-[8px] pb-[6px] mt-[30px] cursor-pointer rounded relative left-[-89px] ml-[5px] text-[1.2em] h-[30px] w-[40px];
+  }
+}
